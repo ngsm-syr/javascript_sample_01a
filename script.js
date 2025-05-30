@@ -10,14 +10,14 @@ btnSample01.addEventListener('click', () => {
 // ID要素 の背景色を変える
 const btnSample02 = document.querySelector('.sample02');
 btnSample02.addEventListener('click', () => {
-  const obj = document.getElementById('id01');
+  const obj = document.querySelector('#id01');
   obj.style.backgroundColor = 'orange';
 });
 
 // CLASS要素 の背景色を変える
 const btnSample03 = document.querySelector('.sample03');
 btnSample03.addEventListener('click', () => {
-  const lines = document.getElementsByClassName('class01');
+  const lines = document.querySelectorAll('.class01');
   for (let i = 0; i < lines.length; i++) {
     lines[i].style.backgroundColor = 'green';
   }
@@ -26,7 +26,7 @@ btnSample03.addEventListener('click', () => {
 // HTML要素 の背景色を変える
 const btnSample04 = document.querySelector('.sample04');
 btnSample04.addEventListener('click', () => {
-  const obj = document.getElementsByTagName('p');
+  const obj = document.querySelectorAll('p');
   for (let i = 0; i < obj.length; i++) {
     obj[i].style.backgroundColor = 'blue';
   }
